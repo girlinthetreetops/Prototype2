@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     public float xRange = 10;
     public float zRange = 5f;
 
+    public GameObject projectilePrefab;
+
     void Start()
     {
         
@@ -44,6 +46,12 @@ public class PlayerController : MonoBehaviour
         if (transform.position.z > zRange)
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, zRange);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+
         }
 
     }
