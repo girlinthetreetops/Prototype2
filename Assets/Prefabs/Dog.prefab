@@ -818,7 +818,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3990694690159202534}
   - component: {fileID: 5556616154411786838}
-  - component: {fileID: 9037851190667556782}
+  - component: {fileID: 345910033609859622}
+  - component: {fileID: 7062948719559590531}
+  - component: {fileID: 7364029212375292290}
   m_Layer: 0
   m_Name: Dog
   m_TagString: Untagged
@@ -899,7 +901,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &9037851190667556782
+--- !u!114 &345910033609859622
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -908,10 +910,58 @@ MonoBehaviour:
   m_GameObject: {fileID: 1446092945375172240}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8cf7868afbd54dcb8120f4f0ca506f0, type: 3}
+  m_Script: {fileID: 11500000, guid: 9cce68108ebd141eca5003e108d4c656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  playerLocation: {fileID: 0}
+--- !u!65 &7062948719559590531
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446092945375172240}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.1488781, y: 0.19545391, z: 0.20976268}
+  m_Center: {x: 0.0051888363, y: 0.08816653, z: -0.031217204}
+--- !u!54 &7364029212375292290
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446092945375172240}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1517316319231878616
 GameObject:
   m_ObjectHideFlags: 0
